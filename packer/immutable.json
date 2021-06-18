@@ -12,7 +12,7 @@
             "service_account_key_file": "{{user `key`}}",
             "folder_id": "{{user `folder_id`}}",
             "source_image_family": "{{user `images_sourse_id`}}",
-            "image_name": "reddit-base-{{timestamp}}",
+            "image_name": "reddit-full-{{timestamp}}",
             "image_family": "reddit-full",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v1",
