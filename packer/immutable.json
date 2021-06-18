@@ -1,24 +1,23 @@
-
 {
-    "variables":
-        {
-        "folder_id": "",
-        "images_sourse_id": "",
-        "key": "",
-        "subnet_id": ""
+        "variables":
+       	{
+           "folder_id": "",
+           "images_sourse_id": "",
+           "key": "",
+           "subnet_id": ""
 	},
-    "builders": [
+     	"builders": [
         {
             "type": "yandex",
             "service_account_key_file": "{{user `key`}}",
             "folder_id": "{{user `folder_id`}}",
             "source_image_family": "{{user `images_sourse_id`}}",
             "image_name": "reddit-base-{{timestamp}}",
-            "image_family": "reddit-base",
+            "image_family": "reddit-full",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v1",
-	    "use_ipv4_nat": "true",
-	    "subnet_id": "{{user `subnet_id`}}"
+            "use_ipv4_nat": "true",
+            "subnet_id": "{{user `subnet_id`}}"
         }
     ],
     "provisioners": [
@@ -31,6 +30,18 @@
             "type": "shell",
             "script": "scripts/install_mongodb.sh",
             "execute_command": "sudo {{.Path}}"
-        }
+        },
+	{
+	    "type": "shell",
+            "script": "files/deploy.sh",
+            "execute_command": "sudo {{.Path}}"
+
+	},
+	{
+	    "type": "shell",
+            "script": "files/puma_service.sh",
+            "execute_command": "sudo {{.Path}}"
+	}
     ]
 }
+
