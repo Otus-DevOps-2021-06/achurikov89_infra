@@ -17,3 +17,9 @@ variables.json
 ##  Построение bake-образа:
 immutable.json
 
+## DZ Terraform-1
+В ходе домашнего задания было сделано:
+- Создана новуя ветка terraform-1
+- Установлен Terraform
+- Созданы конфигурационные файлы Terraform: main.tf, terraform.tfstate, outputs.tf, variables.tf, terraform.tfvars, terraform.tfvars.example
+- Протестировано создание VM в yc с помощью terraform используя образ созданный Packer.
