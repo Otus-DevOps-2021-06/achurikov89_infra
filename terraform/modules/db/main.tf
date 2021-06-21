@@ -13,7 +13,7 @@ image_id = var.db_disk_image
 }
 }
 network_interface {
-subnet_id = yandex_vpc_subnet.app-subnet.id
+subnet_id = var.subnet_id
 nat = true
 }
 metadata = {
