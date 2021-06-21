@@ -23,3 +23,6 @@ immutable.json
 - Установлен Terraform
 - Созданы конфигурационные файлы Terraform: main.tf, terraform.tfstate, outputs.tf, variables.tf, terraform.tfvars, terraform.tfvars.example
 - Протестировано создание VM в yc с помощью terraform используя образ созданный Packer.
+
+## DZ Terraform-2
+
