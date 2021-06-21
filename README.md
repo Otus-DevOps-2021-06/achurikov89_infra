@@ -25,4 +25,4 @@ immutable.json
 - Протестировано создание VM в yc с помощью terraform используя образ созданный Packer.
 
 ## DZ Terraform-2
-
+Было создано:
