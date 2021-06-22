@@ -9,4 +9,3 @@ description = "Disk image for reddit db"
 default = "reddit-db-base"
 }
 
-
