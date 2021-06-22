@@ -30,3 +30,7 @@ immutable.json
 - Созданы две VM
 - Созданы App module + DB module
 - Созданы Stage & Prod
+
+## DZ ansible-1
+- Знакомство с ansible
+- Написан простой плейбук clone.yml который клонирует репозиторий
