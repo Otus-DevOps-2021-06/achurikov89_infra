@@ -17,7 +17,7 @@ subnet_id = var.subnet_id
 nat = true
 }
 metadata = {
-    ssh-keys = "ubuntu:${file(var.public_key_path)}"
+    ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 }
 
