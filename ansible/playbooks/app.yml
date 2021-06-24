@@ -6,3 +6,4 @@
    db_host: 178.154.229.190
   roles:
     - app
+    - jdauphant.nginx
