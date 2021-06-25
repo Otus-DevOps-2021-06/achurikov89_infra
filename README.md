@@ -45,3 +45,6 @@ immutable.json
 - Ansible Galaxy
 - Работа с Community-ролями
 - Работа с Ansible Vault 
+
+## DZ ansible-4
+- Знакомство с vagrard
