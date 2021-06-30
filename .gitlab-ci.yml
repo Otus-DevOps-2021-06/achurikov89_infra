@@ -7,6 +7,8 @@ variables:
   DATABASE_URL: '127.0.0.1:27017'
 
 before_script:
+ - apt-get update
+ - apt-get install -y mongodb-server
  - cd reddit
  - bundle install
 
