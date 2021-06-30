@@ -49,6 +49,6 @@ immutable.json
 ## DZ ansible-4
 - Знакомство с vagrard
 
-## DZ gitlab-ci-1 
+## DZ gitlab-ci-1
 - Развертывание Gitlab CI
-- Настройка CI/CD Pipeline
+- Разработка CI/CD Pipeline
